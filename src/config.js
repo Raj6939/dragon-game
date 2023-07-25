@@ -1,5 +1,5 @@
 const config={
-    apiSecret:'256650e87dd10b14cc2c41624e0ea.a6a7e55f6e2e0747ed4d64668f6c28e31ae2ca463e39cc2c1d5bb943f204e88c9c82f1b872c382c3fc50cb5ee30bb7199',
+    apiSecret:'7f2318bd1f9398064a51ca0922721.7d002dc7b6d78db8f8dbdb24220aa959bdb5304e33b99e21ffabca6dd578b349b728abda8a16b45db9955c46961150bda',
     baseUrl:'https://api.entity.hypersign.id'
 }
 

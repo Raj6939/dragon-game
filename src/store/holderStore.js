@@ -26,6 +26,7 @@ function ldToJsonConvertor(ld) {
 const holderStore = {
   namespaced: true,
   state: {
+    encryptedDocs:[],
     hypersignVp: null,
     address: "",
     didDoc: null,
@@ -154,6 +155,20 @@ const holderStore = {
           reject(error);
         }
       });
+    },
+    fetchAllDocs:({state}) => {
+      return new Promise((resolve,reject) => {
+        try {
+          state.edvClient.fetchAllDocs({
+            edvId: `hs:edv:${state.didDoc.id}`,
+          }).then(data=>{
+            state.encryptedDocs = data
+            resolve(data)
+          })
+        } catch (error) {
+          reject(error)
+        }
+      })
     },
     queryCredFromEdv: ({ state, commit }) => {
       return new Promise((resolve, reject) => {

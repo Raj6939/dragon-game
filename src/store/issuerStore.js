@@ -122,14 +122,14 @@ const issuerStore = {
               "sch:hid:testnet:zCMDMsfjziPSWmkQdgdvbts6FHuyJVHzXtobKct2kSnfA:1.0",
             subjectDid: rootGetters["holderStore/getDidDocId"],
             issuerDid:
-              "did:hid:testnet:zHfG5jtCiZLarsiPENH4LZ1u9uUfCWpiXicWshJFZQXTn",
+              "did:hid:testnet:zEwEyAhzUVxcejAkc5di15uNhYKswBiLeEBzvSiX2ojBw", // issuer DID
             expirationDate: "2027-12-10T18:30:00.000Z",
             fields: {
               ...payload,
             },
             namespace: "testnet",
             verificationMethodId:
-              "did:hid:testnet:zHfG5jtCiZLarsiPENH4LZ1u9uUfCWpiXicWshJFZQXTn#key-1",
+              "did:hid:testnet:zEwEyAhzUVxcejAkc5di15uNhYKswBiLeEBzvSiX2ojBw#key-1", // issuer verification method
             persist: true,
           };
           fetch(url, {
